@@ -63,3 +63,15 @@ function moverSlide(direccion) {
 setInterval(() => {
   moverSlide(1);
 }, 5000);
+
+function abrirModal(src) {
+  const modal = document.getElementById("modalImagen");
+  const imagen = document.getElementById("imagenModal");
+
+  imagen.src = src;
+  modal.style.display = "flex";
+}
+
+function cerrarModal() {
+  document.getElementById("modalImagen").style.display = "none";
+}
