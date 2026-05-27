@@ -34,10 +34,10 @@
     <button class="slider-btn prev" onclick="moverSlide(-1)">‹</button>
 
     <div class="slider-track" id="sliderTrack">
-      <img src="img/trabajo1.jpg" class="slide active" alt="Trabajo 1">
-      <img src="img/trabajo2.jpg" class="slide" alt="Trabajo 2">
-      <img src="img/trabajo3.jpg" class="slide" alt="Trabajo 3">
-      <img src="img/trabajo4.jpg" class="slide" alt="Trabajo 4">
+      <img src="img/trabajo1.jpg" class="slide active" alt="Trabajo 1" onclick="abrirModal(this.src)">
+      <img src="img/trabajo2.jpg" class="slide" alt="Trabajo 2" onclick="abrirModal(this.src)">
+      <img src="img/trabajo3.jpg" class="slide" alt="Trabajo 3" onclick="abrirModal(this.src)">
+      <img src="img/trabajo4.jpg" class="slide" alt="Trabajo 4" onclick="abrirModal(this.src)">
     </div>
 
     <button class="slider-btn next" onclick="moverSlide(1)">›</button>
@@ -45,6 +45,11 @@
 
   <div class="dots" id="dots"></div>
 </section>
+
+<div id="modalImagen" class="modal" onclick="cerrarModal()">
+  <span class="cerrar-modal">&times;</span>
+  <img class="modal-contenido" id="imagenModal">
+</div>
 
 <main>
 
