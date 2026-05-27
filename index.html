@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Studio Creativo | Diseño Gráfico</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="hero">
+  <nav class="navbar">
+    <div class="logo">Studio Creativo</div>
+    <div class="menu">
+      <a href="#servicios">Servicios</a>
+      <a href="#portafolio">Portafolio</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+  </nav>
+
+  <section class="hero-content">
+    <h1>Diseño gráfico profesional para hacer crecer tu marca</h1>
+    <p>Logotipos, redes sociales, lonas, tarjetas, menús, publicidad impresa y más.</p>
+    <a class="btn-primary" href="https://wa.me/528187079273?text=Hola,%20me%20interesa%20una%20cotización" target="_blank">
+      Cotizar por WhatsApp
+    </a>
+  </section>
+</header>
+
+<main>
+
+<section id="servicios" class="section">
+  <h2>Servicios</h2>
+  <p class="section-desc">Soluciones visuales para negocios, emprendedores y marcas.</p>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Logotipos</h3>
+      <p>Diseño de identidad visual profesional para tu negocio.</p>
+    </div>
+
+    <div class="card">
+      <h3>Redes sociales</h3>
+      <p>Posts, historias, banners y contenido visual para redes.</p>
+    </div>
+
+    <div class="card">
+      <h3>Publicidad impresa</h3>
+      <p>Lonas, volantes, tarjetas, menús, etiquetas y más.</p>
+    </div>
+  </div>
+</section>
+
+<section id="portafolio" class="section dark">
+  <h2>Portafolio</h2>
+  <p class="section-desc">Explora algunos de nuestros trabajos realizados.</p>
+
+  <input 
+    type="text" 
+    id="busqueda" 
+    placeholder="Buscar por tipo de trabajo..." 
+    onkeyup="filtrarTrabajos()"
+  />
+
+  <div class="portfolio-grid">
+
+    <div class="trabajo" data-categoria="logo branding">
+      <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71" alt="Diseño de logotipo">
+      <div>
+        <h3>Diseño de Logotipo</h3>
+        <p>Branding profesional para negocio local.</p>
+      </div>
+    </div>
+
+    <div class="trabajo" data-categoria="redes sociales instagram">
+      <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113" alt="Diseño para redes sociales">
+      <div>
+        <h3>Diseño para Redes Sociales</h3>
+        <p>Contenido visual para Instagram y Facebook.</p>
+      </div>
+    </div>
+
+    <div class="trabajo" data-categoria="lona banner publicidad">
+      <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0" alt="Diseño de lona">
+      <div>
+        <h3>Lonas y Banners</h3>
+        <p>Publicidad impresa para eventos y negocios.</p>
+      </div>
+    </div>
+
+    <div class="trabajo" data-categoria="tarjetas presentación">
+      <img src="https://images.unsplash.com/photo-1586953208448-b95a79798f07" alt="Tarjetas de presentación">
+      <div>
+        <h3>Tarjetas de Presentación</h3>
+        <p>Diseños elegantes y listos para impresión.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="contacto" class="section contacto">
+  <h2>¿Tienes un proyecto en mente?</h2>
+  <p>Contáctanos y te ayudamos a darle una imagen profesional a tu marca.</p>
+  <a class="btn-primary" href="https://wa.me/528112345678?text=Hola,%20quiero%20información%20sobre%20sus%20servicios" target="_blank">
+    Enviar mensaje por WhatsApp
+  </a>
+</section>
+
+</main>
+
+<a class="whatsapp-float" href="https://wa.me/528112345678" target="_blank">WhatsApp</a>
+
+<footer>
+  <p>© 2026 Studio Creativo. Todos los derechos reservados.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
